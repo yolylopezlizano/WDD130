@@ -3,7 +3,7 @@
 
 div {
     max-width: 1600px;
-    background-color: wheat;
+    background-color: rgba(248, 242, 232, 0.444);
 }
 #content {
     margin: 0 auto;
@@ -57,11 +57,11 @@ nav a:hover{
     border-radius: 5px;
 } 
 .book:hover{
-    background-color: whitesmoke;
+    background-color: rgba(22, 168, 68, 0.558);
     color: azure;
 }
 .join:hover{
-    background-color: #055c0e90;
+    background-color:rgba(22, 168, 68, 0.558);
     color: azure;
 }
 .msg{

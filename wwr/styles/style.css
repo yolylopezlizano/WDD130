@@ -44,7 +44,7 @@ header{
     background-color: #055c0ed1;
 }
 nav a:hover{
-    background-color: beige;
+    background-color: rgba(22, 168, 68, 0.558);
     color: rgb(238, 147, 11);
 }
 .book, .join{

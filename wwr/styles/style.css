@@ -24,17 +24,15 @@ nav {
 #hero-msg h4 {
     text-align: center;
     color: #8c0505c0;
-    margin-top: 10%;
 }
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+    margin-top: 0px;
 }
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
 }
 #hero-box {
     grid-column: 1/4;
@@ -152,14 +150,13 @@ footer .social img{
     width: 80px;
     padding-top: 10px;
 }
-
 #logo_link{
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
 .rivers-card, .camping-card, .rapids-card{
-    margin: 200px, 0;
+    margin: 200px 0;
 }
 .home-grid{
     text-align: center;

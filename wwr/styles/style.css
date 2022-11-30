@@ -244,7 +244,7 @@ main section img {
     margin-top: 1em;
     color: #8c0505c0 ;
     font-family: kalam; 
-    font-size: 50px;
+    font-size: 35px;
 }
 .down-river{
     width: 50%;
@@ -256,37 +256,34 @@ main section img {
     text-align: left;
     margin-left: 22em;
     margin-right: 2em;
-
-    font-size: 25px ;
+    margin-top: 1em;
     font-family: cursive ;
-    
 }
 .six-night-msg{
     margin-left: -21em;
-    margin-right: 33em;
-    margin-top: -24em;
-    font-size: 25px ;
+    margin-right: 36em;
+    margin-top: -28em;
     font-family: cursive;
 }
 .ecuador-map{
-    margin-left: 10em;
+    margin-left: 15em;
     margin-top: 3em;
     width: 70%;
 }
 .final-msg{
-    margin-top: 3em;
+    margin-top: 8em;
     text-align: center;
-    margin-left: -12em;
+    margin-left: -20em;
     margin-right: 1em;
     font-family: kalam;
     color: #8c0505c0 ;
-    font-size: 40px;
+ 
 }
 .book-three, .join-six{
     background-color:#8c0505c0;
     color: whitesmoke;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 5px;
     padding: 0.5em;
     align-items: center;

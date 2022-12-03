@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="styles/style.css" />
-    <title> Galapagos Rafting Adventure | WWR | Rates and Dates </title>
+    <title> Galapagos Rafting Adventure | WWR | Contact Us </title>
     
 </head>
 <body>
@@ -22,47 +22,27 @@
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
-    
-        <!--  <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/hero_image.jpg" alt="People enjoying with rafting">
-            </div>
-            <section id="hero-msg">
-                <h1 class="home-title">Come with us and enjoy the adventure</h1>
-                <h4>Dare to do it with Galapagos Rafting Adventure </h4>
-                <div class='button-box'>
-                    <a class='book' href="rates.html">Book Now</a>
-                </div>
-            </section>
-        </div>
-        <main class="home-grid">
-            <section class="rivers-card">
-                <img class="card-img" src="images/river2.jpg" alt="river in forest">
-                <img class="icon" src="images/logo_river.jpg" alt="river icon">
-                <h2>Rivers</h2>
-            </section>
-            <section class="camping-card">
-                <img class="card-img" src="images/camping2.jpg" alt="tent of camp">
-                <img class="icon" src="images/fire_icon.jpg" alt="fire icon">
-                <h2>Camping</h2>
-            </section>
-            <section class="rapids-card">
-                <img class="card-img" src="images/rapids3.jpg" alt="rafting boat">
-                <img class="icon" src="images/oars_icon.jpg" alt="oars icon">
-                <h2>Rapids</h2>
-            </section>
-            <div id="background"></div>
-            <img class="mountains" src="images/mistymountain1.jpg" alt="Mountains">
-            <section class="msg">
-                <h2>Live a unique and complete adventure</h2>
-                <p>We will accelerate your adventure with the rapids and then give you a moment of relaxation and harmony that you can 
-                    find only in the beauty of nature, breathing fresh air on the mountain trails or taking a bath in the waterfalls 
-                    will make this adventure magical and unforgettable. </p>
-                <a class='join' href="rivers.html">Join Us</a>
-            </section>
-        </main>
-        -->
-        
+
+        <form action="/my-form-page" method="post">
+            <ul>
+                <li>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+              </ul>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+        </form>
+        <div id="feedback"></div>      
         
         <footer>
             <p>Galapagos Rafting Adventure &copy; 2022 - Yolanda de Lopez</p>
@@ -81,5 +61,22 @@
             </div>
         </footer>
     </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>

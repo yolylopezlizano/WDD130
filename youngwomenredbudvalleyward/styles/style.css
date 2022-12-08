@@ -58,13 +58,14 @@ main section{
     color: #8c0505c0;
     font-family: Kalam, Helvetica, sans-serif;
     font-size: 100%;
+    margin-top: 1em;
 } 
 #hero-msg h4 {
     text-align: center;
     color: #8c0505c0;
     font-family: Kalam, Helvetica, sans-serif;
     font-size: 100%;
-    margin-top: -1em;
+    margin-top: 1em;
 }
 #hero {
     display: grid;
@@ -86,7 +87,6 @@ main section{
 .home-title{
     color:#af0303c0 ;
     font-family: Kalam, Helvetica, sans-serif ;
-
     margin-top: 60px;
 }
 .theme-title{
@@ -109,6 +109,10 @@ main section{
 .theme-cards{
     margin-top: -320px;
 
+}
+h2{
+    color:#af0303c0 ;
+    font-family: "Indie Flower";
 }
 footer{
     background-color: #E6B57E;

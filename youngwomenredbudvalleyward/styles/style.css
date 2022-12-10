@@ -139,7 +139,6 @@ footer a{
 }
 footer p a:hover {
     text-decoration: underline;
-    color: var(--secondary-color);
 }
 footer p{
     text-decoration: none;

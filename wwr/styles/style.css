@@ -103,7 +103,6 @@ footer{
     background-color: #055c0e90;
     color: azure;
     padding: 25px 50px;
-    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -127,10 +126,16 @@ h4{
     padding-bottom: 15px;
 }
 footer a{
-    color: white;
     text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 12px 0;
+    background-color: none;
+    transition: .3s;
+    border-radius: 10px;
 }
 footer a:hover{
+    text-decoration: underline;
     color: #055c0e90;
 }
 footer p{
@@ -141,7 +146,11 @@ footer p a:hover{
     text-decoration: underline;
 }
 footer .social img{
-    padding-top: 15px;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+footer .social img:hover {
+    transform: scale(1.08);
 }
 .logo{
     width: 80px;
@@ -261,46 +270,46 @@ form {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
-  }
-  ul {
+}
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  form li + li {
+}
+form li + li {
     margin-top: 1em;
-  }
-  label {
+}
+label {
     display: inline-block;
     width: 90px;
     text-align: right;
     color: #8c0505c0;
-  }
-  input, textarea {
+}
+input, textarea {
     font: 1em sans-serif;
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #8c0505c0;
 }
-  input:focus,
-  textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #000;
-  }
-  textarea {
+}
+textarea {
     vertical-align: top;
     height: 5em;
-  } 
-  .button {
+} 
+.button {
     padding-left: 90px;
     color: #8c0505c0;
-  }
-  button {
+}
+button {
     margin-left: 0.5em;
     margin-top: 2em;
     color: #8c0505c0;
-  }
-  #feedback {
-    background-color: #6a212184;
+}
+#feedback {
+   background-color: #6a212184;
     color: whitesmoke;
     position: absolute;
     top: 0;

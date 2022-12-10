@@ -46,7 +46,7 @@ main section{
     text-align: center;
 }
 .logo{
-    width: 100px;
+    width: 80px;
 }
 #logo_link{
     padding-top: 5px;
@@ -57,28 +57,28 @@ main section{
     text-align: center;
     color: #8c0505c0;
     font-family: Kalam, Helvetica, sans-serif;
-    font-size: 100%;
-    margin-top: 1em;
+    font-size: 35px;
+    margin-top: .5em;
 } 
 #hero-msg h4 {
     text-align: center;
     color: #8c0505c0;
     font-family: Kalam, Helvetica, sans-serif;
-    font-size: 100%;
-    margin-top: 1em;
+    font-size: 25px;
+    margin-top: -1em;
 }
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: 0px;
+    grid-row: 33% 33% 33%;
 }
 #hero-msg {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/3;
 }
 #hero-box {
     grid-column: 1/4;
-    grid-row: 1/3;
+    grid-row: 1/4;
     z-index: -1;
 }
 #hero-img{
@@ -89,37 +89,160 @@ main section{
     font-family: Kalam, Helvetica, sans-serif ;
     margin-top: 60px;
 }
-.theme-title{
-    color:#af0303c0 ;
-    font-family: Kalam, Helvetica, sans-serif ;
-    margin-top: -400px;
-}
-.young-temple{
-    margin-top: -60px;
-    margin-left: 1290px;
-}
-.home-grid{
+.home-Grid{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
-.homeImg{
-    margin-top: 50px;
+.theme-title{
+    grid-column:1/11;
+    grid-row:1/2;
+    text-align: center;
+    color:#af0303c0;
+    font-family: Kalam, Helvetica, sans-serif ;
 }
-.theme-cards{
-    margin-top: -320px;
-
+.templeok{
+    grid-column:1/2;
+    grid-row:2/3;
 }
-h2{
+.young-temple{
+    grid-column: 9/11;
+    grid-row: 2/3;
+    margin-left: 100px;
+    margin-left: -20px;
+}
+.theme-card{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    margin-left: -50px;
+}
+h2, h3 {
     color:#af0303c0 ;
     font-family: "Indie Flower";
 }
+
 footer{
     background-color: #E6B57E;
     color: azure;
-    padding: 25px 50px;
-    margin-top: 200px;
+
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+footer a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: .3s;
+    border-radius: 20px;
+}
+footer p a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+footer p{
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    transition: .3s;
+    border-radius: 20px;
+}
+footer .social img {
+    border-radius: 10px;
+    transition: transform .2s;
+}
+footer .social img:hover {
+    transform: scale(1.08);
+}
+h1{
+    color:#af0303c0 ;
+    font-family: "Indie Flower";
+    font-size: 50px;
+    text-align: center;
+}
+.activity-Grid p{
+    color:#af0303c0 ;
+    font-family: "Indie Flower";
+    font-size: 30px;
+    text-align: center;
+}
+.activityImg{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.manual{
+    grid-column: 5/7;
+    grid-row: 2/3;
+    margin-top: -50px;
+    margin-left: -15px;
+}
+.spiritual{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    border-radius: 20px;
+}
+.social{
+    grid-column: 7/8;
+    grid-row: 1/2;
+    border-radius: 20px;
+}
+.physical{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    border-radius: 20px;
+    margin-top: -70px;
+}
+.intellectual{
+    grid-column: 7/8;
+    grid-row: 4/5;
+    border-radius: 20px;
+    margin-top: -70px;
+}
+.button-box1{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    margin-top: 180px;
+    margin-left: -100px;
+}
+.button-box2{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    margin-left: -100px;
+    margin-top: -70px;
+}
+.button-box3{
+    grid-column: 7/8;
+    grid-row: 1/2;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+.button-box4{
+    grid-column: 7/8;
+    grid-row: 4/5;
+    margin-left: 70px;
+    margin-top: -70px;
+}
+
+p{
+    color: #ab3e0f;
+    font-family: kalam, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    transition: .3s;
+    border-radius: 20px;
+}
+.boton{
+    border: 1px solid #ab3e0f;
+    padding: 10px;
+    background-color: #E6B57E;
+    color: #ab3e0f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'kalam', Courier, monospace;
+    border-radius: 20px;
+    border-top: 100px;
 }

@@ -199,31 +199,42 @@ h1{
     border-radius: 20px;
     margin-top: -70px;
 }
+
+.button-box1, .button-box2, .button-box3, .button-box4{
+    border: 1px solid #ab3e0f;
+    background-color: #E6B57E;
+    color: #ab3e0f;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'kalam', Courier, monospace;
+    border-radius: 20px;
+    width: 40%;
+    height: 12%;
+}
 .button-box1{
-    grid-column: 4/5;
+    grid-column: 4/6;
     grid-row: 1/2;
     margin-top: 180px;
-    margin-left: -100px;
+    margin-left: 45px;  
 }
 .button-box2{
-    grid-column: 4/5;
+    grid-column: 4/6;
     grid-row: 4/5;
-    margin-left: -100px;
+    margin-left: 55px;
     margin-top: -70px;
 }
 .button-box3{
-    grid-column: 7/8;
+    grid-column: 7/9;
     grid-row: 1/2;
-    margin-top: 180px;
-    margin-left: 50px;
+    margin-top: 190px;
 }
 .button-box4{
-    grid-column: 7/8;
+    grid-column: 7/10;
     grid-row: 4/5;
-    margin-left: 70px;
     margin-top: -70px;
 }
-
 p{
     color: #ab3e0f;
     font-family: kalam, "Helvetica Neue", Helvetica, sans-serif;
